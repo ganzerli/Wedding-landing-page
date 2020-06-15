@@ -33,9 +33,7 @@
     </header>
     <!-- /header -->
 
-
-    <!-- Carousel -->
-
+    <!--section Carousel -->
     <section class="container-fluid section-carousel py-5">
         <div class="row justify-content-center py-5">
             <h2 class="subtitle text-center col-12 col-md-8">
@@ -46,7 +44,7 @@
                 rivedere questo incredibile momento...
             </p>
             <br>
-            <!-- carousel -->
+            <!-- carousel body -->
 
             <div id="carouselExampleControls" class="carousel slide col-12 col-md-8" data-ride="carousel">
                 <div class="carousel-inner">
@@ -69,14 +67,10 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
-            <!-- /carousel -->
-
+            <!-- /carousel body-->
         </div>
     </section>
-
-    <!-- Carousel -->
-
+    <!-- / section Carousel -->
 
     <!--  split & subtitile -->
     <section class="subtitle-split container py-5">
@@ -106,7 +100,6 @@
     </section>
     <!-- / split & subtitile -->
 
-
     <!--thin banner -->
     <section class="container-fluid thin-banner">
         <div class="row justify-content-center">
@@ -116,7 +109,6 @@
         </div>
     </section>
     <!-- /thin banner -->
-
 
     <!--  3 motivation -->
     <section class="container py-5">
@@ -128,8 +120,8 @@
                     <i class="far fa-heart"></i>
                 </span>
 
-                <p class="motivation-body lead">
-                    questa é la nostra motivazione per cui dovresti scegliere la nostra agenzia
+                <p class="motivation-body my-4 lead">
+                    Anche il nostro manager é sposato con una ragazza di 22 anni, lui ne ha adesso 65, ed é il suo entusiasmo a portare avanti la baracca
                 </p>
             </div>
             <div class="motivation col-12 col-md-4">
@@ -139,8 +131,8 @@
                     <i class="fas fa-map-marker-alt"></i>
                 </span>
 
-                <p class="motivation-body lead">
-                    questa é la nostra motivazione per cui dovresti scegliere la nostra agenzia
+                <p class="motivation-body my-4 lead">
+                    Vi basta farci sapere dove volete trascorrere il matrimonio, abbiamo molte location sulla lista, o diteci voi la vostra location preferita
                 </p>
             </div>
             <div class="motivation col-12 col-md-4">
@@ -150,15 +142,13 @@
                     <i class="fas fa-glass-cheers"></i>
                 </span>
 
-                <p class="motivation-body lead">
-                    questa é la nostra motivazione per cui dovresti scegliere la nostra agenzia
+                <p class="motivation-body my-4 lead">
+                    Voi dovete solo decidere e rilassarvi, noi abbiamo in mano tutto, viaggio, party, decorazione e qualsiasi sia il vostro desiderio per noi sará un piacere
                 </p>
             </div>
         </div>
     </section>
     <!-- / 3 motivation -->
-
-
 
     <!--  testimonials -->
     <section class="testimonials">
@@ -174,26 +164,26 @@
             </div>
         </div>
     </section>
-
-
     <!-- / testimonials -->
 
     <!-- contact form -->
     <section class="contacts py-5">
         <div class="container">
             <div class="row">
+                
                 <div class="col-12 col-md-6 d-flex justify-content-center">
-                    check availability
+                    <h2 class="col-12 py-4 text-center">Contattaci !</h2>
                 </div>
+
                 <div class="col-12 col-md-6 pl-md-5">
-                    <form action="!#" method="post" class="contact-form">
+                    <form action="" id="contact-form">
 
                         <label for="basic-url">Nome e Cognome</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon3"><i class="fas fa-file-signature"></i></span>
                             </div>
-                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" required>
                         </div>
                     
                         <label for="basic-url">Email</label>
@@ -201,7 +191,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon3">@</span>
                             </div>
-                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            <input type="email" class="form-control" id="basic-url" aria-describedby="basic-addon3" required>
                         </div>
                     
                         <div class="input-group">
@@ -210,16 +200,43 @@
                             </div>
                             <textarea class="form-control" aria-label="With textarea"></textarea>
                         </div>
-                    
+
+                        <div class="input-group py-3 text-right">
+                            <input class="btn btn-primary" type="submit" value="INVIA" data-toggle="modal" data-target="#exampleModal">
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
     <!-- contact form -->
+    
+    <!-- modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Messaggio inviato</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Grazie per aver contattato Gallina Vechhia, il tuo messaggio raggiungera il nostro server dopo di che ti risponderemo il giorno lavorativo seguente
+            </div>
+            <div class="modal-footer">
+                <i class="far fa-check-circle modal-icon" data-dismiss="modal"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /modal -->
 
     <!-- footer -->
-
+    <footer class="footer text-center">
+        <p class="lead"> &copy; 2020  GALLINA VECCHIA</p>
+        <p class="lead">P. IVA 12345678999</p>
+    </footer>
     <!-- /footer -->
 
     <!-- scripts -->
