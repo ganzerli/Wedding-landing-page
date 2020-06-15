@@ -123,6 +123,11 @@ header .cta:hover{
 /*end second section */
 
 /* 3 motivations */
+.motivation-title{
+    margin-top:3rem;
+    color:var(--color-secondary);
+}
+
 .iconout{
     color: var(--color-secondary);
     padding: 1rem;
@@ -139,9 +144,46 @@ header .cta:hover{
 }
     /* /3motivation */
 
-
+/* banner */
 .thin-banner{
     background:var(--color-highlight);
     color:white;
     padding:3rem;
 }
+/* end banner */
+
+/* testimonials */
+
+section.testimonials{
+    background-color: var(--color-main);
+}
+
+.testimonials .subtitle{
+    color:white;
+}
+.testimonials img{
+    max-width:90vw;
+    height: auto;
+    margin:auto;
+    margin:2rem 0;
+}
+/* end testimonials */
+
+/* contact form */
+section.contacts{
+    background-color: var(--color-secondary);
+}
+
+form.contact-form label{
+    color:white;
+    font-weight: bolder;
+}
+
+form.contact-form .input-group-text{
+    background:var(--color-highlight);
+    color:white;
+    border:none;
+}
+
+
+/* /contact form */
