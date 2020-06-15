@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+:root{
+    --color-main:#333333;
+    --color-secondary:#777777;
+    --color-highlight:#3C7DD9;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color:--color-main;
+    font-family: 'Alice', serif;
+}
+
+h2{
+     font-size:2.5rem; 
+     font-family: 'Satisfy', cursive;
+}
+
+/* HEADER */
+header h1{
+    font-size:3.5rem;
+    font-family: 'Satisfy', cursive;
+    letter-spacing: .5rem;
+}
+
+header > .header-bg-img{
+    min-height:95vh;
+    background:linear-gradient(100deg, rgba(33,33,33,.6) 50%, rgba(77,77,77,.6) 50%), url("./media/old-wife-big.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+header .text-heading{
+    font-size:1.5rem;
+   font-family: 'Satisfy', cursive;
+   margin-left:10%;
+   color:white;
+}
+
+header .cta{
+    background:var(--color-highlight) !important;
+    margin-left: 55vw;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size:1.5rem;
+    letter-spacing:.3rem;
+    font-family: 'Satisfy', cursive !important;
+    transition:all .2s ease;
+}
+header .cta:hover{
+    opacity:.85;
+    transform:translateY(-2px);
+}
+
+@media only screen and (max-width: 600px) {
+    header h1{
+        font-size:2.5rem;
+        font-family: 'Satisfy', cursive;
+        letter-spacing: .3rem;
+    }
+    header .text-heading{
+        font-size:1rem;
+       font-family: 'Satisfy', cursive;
+       margin-left:5%;
+       color:white;
+    }
+
+    header .cta{
+        margin-left: 30vw;
+    }
+  }
+
+/*end Header  */
+
+/* carousel */
+.section-carousel{
+    background:var(--color-main);
+    color:white;
+}
+.carousel-item > .image{
+    width:100%;
+    height:55vh;
+    background:var(--color-secondary);
+    background-position: center;
+    background-size: cover;
+}
+.carousel-item > .img1{
+    background-image:url("./media/img1.jpg");
+}
+.carousel-item > .img2{
+    background-image:url("./media/img2.jpg");
+}
+.carousel-item > .img3{
+    background-image:url("./media/img3.jpg");
+}
+/* /carousel */
+
+/* second section */
+.subtitle-split .subtitle{
+    color:var(--color-highlight);
+    font-size: 3rem;
+}
+
+.first-info-picture{
+    height:50vh;
+    background:url(./media/old-guy-mid.jpg);
+    background-position:center;
+    background-size: cover;
+    box-shadow: 10px 10px 0 var(--color-secondary);
+}
+/*end second section */
+
+
+
+.thin-banner{
+    background:var(--color-highlight);
+    color:white;
+    padding:3rem;
+}
