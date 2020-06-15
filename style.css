@@ -122,6 +122,22 @@ header .cta:hover{
 }
 /*end second section */
 
+/* 3 motivations */
+.iconout{
+    color: var(--color-secondary);
+    padding: 1rem;
+    font-size: 3rem;
+    border: solid 3px var( --color-highlight);
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+    /* /3motivation */
 
 
 .thin-banner{
